@@ -1,0 +1,11 @@
+{
+  "name": "marked-govspeak-extension",
+  "version": "0.0.1",
+  "description": "Extensions for marked.js providing support for govspeak markdown syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Pymm (chris.pymm@digital.justice.gov.uk)",
+  "license": "MIT"
+}
