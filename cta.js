@@ -2,14 +2,14 @@ const govspeakCta = {
   name: 'cta',
   level: 'block',
   start(src) {
-    if (src.match(/\$cta/)) {
-      return src.match(/^\$cta/)?.index
+    if (src.match(/\$CTA(?: {2})?/i)) {
+      return src.match(/^\$CTA/i)?.index
     }
     return undefined
   },
   tokenizer(src, tokens) {
     //const rule = /^\$cta\n?(.+?(?=\$cta))?\n?(?:\$cta)/igs
-    const rule = /^\$cta\n([\s\S]*?)\n\$cta/
+    const rule = /^\$CTA(?: {2})?\n([\s\S]*?)\n\$CTA/i
     const match = rule.exec(src)
     if(match) {
       const token = {

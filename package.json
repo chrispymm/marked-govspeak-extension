@@ -1,6 +1,6 @@
 {
   "name": "marked-govspeak-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extensions for marked.js providing support for govspeak markdown syntax",
   "main": "index.js",
   "peerDependencies": {
